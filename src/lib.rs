@@ -2,6 +2,7 @@
 #![warn(dead_code)]
 
 mod lc_1186;
+mod lc_1253;
 
 use std::{cell::RefCell, rc::Rc};
 
