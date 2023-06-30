@@ -3,6 +3,7 @@
 
 mod lc_1186;
 mod lc_1253;
+mod lc_2490;
 
 use std::{cell::RefCell, rc::Rc};
 
