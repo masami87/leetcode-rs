@@ -22,11 +22,11 @@ impl Solution {
             return vec![];
         }
 
-        for i in 0..n {
-            if colsum[i] == 2 {
+        for (i, s) in colsum.iter().enumerate().take(n) {
+            if s == &2 {
                 res[0][i] = 1;
                 res[1][i] = 1;
-            } else if colsum[i] == 1 {
+            } else if s == &1 {
                 if upper > 0 {
                     res[0][i] = 1;
                     upper -= 1;

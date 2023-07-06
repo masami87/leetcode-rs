@@ -2,7 +2,7 @@
 struct Solution;
 impl Solution {
     pub fn is_circular_sentence(sentence: String) -> bool {
-        let words = sentence.split(" ").collect::<Vec<_>>();
+        let words = sentence.split(' ').collect::<Vec<_>>();
         if words[0].chars().next().unwrap() != words[words.len() - 1].chars().last().unwrap() {
             return false;
         }
