@@ -3,6 +3,7 @@
 
 mod lc_1186;
 mod lc_1253;
+mod lc_1289;
 mod lc_16;
 mod lc_2178;
 mod lc_2490;
