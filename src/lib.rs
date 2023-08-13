@@ -10,6 +10,7 @@ mod lc_2490;
 mod lc_2600;
 mod lc_344;
 mod lc_822;
+mod lc_88;
 mod lc_931;
 
 use std::{cell::RefCell, rc::Rc};
