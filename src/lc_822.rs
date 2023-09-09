@@ -23,7 +23,7 @@ impl Solution {
             .iter()
             .filter(|&x| !disabled.contains(x))
             .min()
-            .map(|&x| x)
+            .copied()
             .unwrap_or(0);
         res
     }

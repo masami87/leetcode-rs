@@ -2,6 +2,8 @@
 use std::cell::RefCell;
 use std::rc::Rc;
 
+type Node = Option<Rc<RefCell<TreeNode>>>;
+
 // Definition for a binary tree node.
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
@@ -47,12 +49,7 @@ impl Solution {
             root.val += root2.as_ref().unwrap().borrow().val;
         }
 
-        let (l1, l2, r1, r2): (
-            Option<Rc<RefCell<TreeNode>>>,
-            Option<Rc<RefCell<TreeNode>>>,
-            Option<Rc<RefCell<TreeNode>>>,
-            Option<Rc<RefCell<TreeNode>>>,
-        );
+        let (l1, l2, r1, r2): (Node, Node, Node, Node);
 
         l1 = if root1.is_some() {
             root1.as_ref().unwrap().borrow().left.clone()
