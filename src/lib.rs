@@ -16,6 +16,7 @@ mod lc_617;
 mod lc_822;
 mod lc_88;
 mod lc_931;
+mod lcp_50;
 
 use std::{cell::RefCell, rc::Rc};
 
